@@ -28,3 +28,5 @@ class UserRepository implements RepositoryInterface<User> {
     await this.prisma.user.delete({ where: { id } });
   }
 }
+
+export default UserRepository;
